@@ -39,7 +39,16 @@ if(alarmSet && openDoor){
 // or the username is "Timmy456" and the password is "6789", print "Admin Login Successful" to the console
 // otherwise, print "Admin Access Denied"
 
+let username = prompt('Username')
+let password = prompt('Password')
 
+if (username == 'Timmy456' && password == '6789'){
+    alert('Admin login Successful');
+} else if (username == 'Tommy123' && password == '12345'){
+    alert('Admin login Successful');
+} else {
+    alert('Admin Access Denied');
+}
 
 
 // write code that will set the value of studentClass based on studentGrade
@@ -48,6 +57,8 @@ if(alarmSet && openDoor){
 // 7-8 will be Middle
 // 9 will be Freshman, 10 Sophomore, 11 Junior, 12 Senior
 // Anything other than these values will return "Error" to the console
+
+let studentClass == studentGrade
 
 
 
