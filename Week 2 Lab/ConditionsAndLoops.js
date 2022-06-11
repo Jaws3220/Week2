@@ -39,17 +39,14 @@ if(alarmSet && openDoor){
 // or the username is "Timmy456" and the password is "6789", print "Admin Login Successful" to the console
 // otherwise, print "Admin Access Denied"
 
-let username = prompt('Username')
-let password = prompt('Password')
+let username;
+let password;
 
-if (username == 'Timmy456' && password == '6789'){
-    alert('Admin login Successful');
-} else if (username == 'Tommy123' && password == '12345'){
+if ((username === 'Timmy456' && password === '6789') || (username === 'Timmy456' && password === '6789')){
     alert('Admin login Successful');
 } else {
     alert('Admin Access Denied');
 }
-
 
 // write code that will set the value of studentClass based on studentGrade
 // studentGrade will be K-12
@@ -58,21 +55,63 @@ if (username == 'Timmy456' && password == '6789'){
 // 9 will be Freshman, 10 Sophomore, 11 Junior, 12 Senior
 // Anything other than these values will return "Error" to the console
 
-let studentClass == studentGrade
+let studentClass;
+let studentGrade;
+
+switch (studentGrade){
+    case 'K':
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+        studentClass = 'Elementary';
+        break;
+    case 7:
+    case 8:
+        studentClass = 'Middle';
+        break;
+    case 9:
+        studentClass = 'Freshman';
+        break;
+    case 10:
+        studentClass = 'Sophomore';
+        break;
+    case 11:
+        studentClass = 'Junior';
+        break;
+    case 12:
+        studentClass = 'Senior';
+        break;
+    default:
+        console.log('Error');
+}
+console.log(studentClass);
+    
+
 
 
 
 
 
 // write a for loop that will iterate backwards from 10 to -10
-
-
+for(let i = 10; i >= -10; i--){
+    console.log(i);
+}
 
 // write a do/while loop that prints 1 through 50
-
+let iterator = 1;
+do {
+    console.log(iterator);
+    iterator++;
+} while (iterator <= 50);
 
 // edit the previous do/while loop so that it prints the remainder when the loop number is divided by 4
-
+do {
+    console.log(iterator % 4);
+    iterator++;
+} while (iterator <= 50);
 
 // Someone messed up the following for loop
 // fix the following infinite loop, uncomment to test
@@ -82,7 +121,14 @@ let studentClass == studentGrade
     } 
 */
 
-
-
+for(let i = 1; i < 10; i++){
+    console.log(i);
+}
+for(let i = 11; i > 100; i++){
+    console.log(i);
+}
+for(let i = 110; i > 10; i--){
+    console.log(i);
+}
 
 
